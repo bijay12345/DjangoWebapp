@@ -1,0 +1,18 @@
+{% extends "gym/base.html" %}
+{% block content%}
+  {% for x in video %}
+    <article class="media content-section">
+      <img class="rounded-circle article-img" src="{{x.author.profile.image.url}}">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ x.author }}
+          <small class="text-muted">{{ x.date_posted|date:"F d, Y" }}</small>
+          <h2><a class="article-title" href="{%url 'video-detail' x.id%}">{{x.context}}</a></h2>
+          <video class="video-fluid z-depth-1" controls="controls">
+            <source src="{{x.video.url}}" type="video/mp4" />
+          </video>
+        </div>
+      </div>    
+    </article>
+  {% endfor %}
+{% endblock content%}

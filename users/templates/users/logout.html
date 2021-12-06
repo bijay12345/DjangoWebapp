@@ -1,0 +1,8 @@
+{% extends "gym/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+        <div class="border-top pt-3 container">
+            <h3><em>You are logged out</em></h3>
+            <a class="ml-1 login-url" href="{%url 'login'%}">login Again</a>
+        </div>
+{% endblock content %}
