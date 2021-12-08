@@ -13,7 +13,7 @@ ul {
 }
 
 .bg-steel {
-  background-color: #71DFE7;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .site-header .navbar-nav .nav-link {
@@ -94,4 +94,12 @@ a.article-title:hover {
 
 .navbar-brand{
   color: ;
+}
+.profile{
+  float: right;
+  background-color: blue;
+  margin-right: 20;
+}
+.unauth{
+  float: right;
 }

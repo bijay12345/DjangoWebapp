@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="{% static 'gym/base.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'gym/main.css' %}">
 	{% if title %}
 		<title>{{title}}</title>
 	{%else%}
@@ -35,8 +35,8 @@
           </div>
           {%else%}
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{%url 'login'%}">Login</a>
-            <a class="nav-item nav-link" href="{%url 'register'%}">Register</a>
+            <a class="nav-item nav-link unauth" href="{%url 'login'%}">Login</a>
+            <a class="nav-item nav-link unauth" href="{%url 'register'%}">Register</a>
           </div>
           {%endif%}
         </div>
