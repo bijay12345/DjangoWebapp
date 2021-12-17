@@ -1,0 +1,15 @@
+{% extends "gym/base.html" %}
+{%block content%}
+<h1>Description</h1>
+  <article class="media content-section"> 	  
+    <div class="media-body">
+      <div class="article-metadata">
+        <h2 class="mr-2">{{ item.name }}</h2>
+        <img class="item-img" src="{{item.image.url}}">
+      </div>
+      <h2 class="article-title">{{ item.description }}</h2>
+      <p class="article-content">{{ item.price }}</p>
+    </div>
+  </article>
+  <a class="btn btn-outline-info" href="add_to_cart">Add to Cart</a>
+{% endblock content%}

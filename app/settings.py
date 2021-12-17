@@ -34,6 +34,7 @@ DEBUG = True
 INSTALLED_APPS = [
     'django.contrib.admin',
     'gym.apps.GymConfig',
+    'store.apps.StoreConfig',
     'phonenumber_field',
     'users.apps.UsersConfig',
     'crispy_forms',
@@ -138,7 +139,5 @@ LOGIN_URL = 'login'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'sbijay433@gmail.com'
-EMAIL_HOST_PASSWORD = 'axvjoftyglvorfyq'
 EMAIL_POST = 587
 EMAIL_USE_TLS =True
